@@ -62,8 +62,8 @@ export class PatientComorbidityComponent implements OnInit, OnChanges {
           colors: [baseTheme.variables.primaryLight, baseTheme.variables.primary],
           values: Object.keys(comorbidity).map((c) => ({
             label: comorbidityLabels[c],
-            value: comorbidity[c].positive,
-            percent: Math.round((100 * comorbidity[c].positive) / this.report.patientCount)
+            value: comorbidity[c].positiveCount,
+            percent: Math.round((100 * comorbidity[c].positiveCount) / this.report.patientCount)
           }))
         },
         {
@@ -71,8 +71,8 @@ export class PatientComorbidityComponent implements OnInit, OnChanges {
           colors: [baseTheme.variables.dangerLight, baseTheme.variables.danger],
           values: Object.keys(comorbidity).map((c) => ({
             label: comorbidityLabels[c],
-            value: comorbidity[c].negative,
-            percent: Math.round((100 * comorbidity[c].negative) / this.report.patientCount)
+            value: comorbidity[c].negativeCount,
+            percent: Math.round((100 * comorbidity[c].negativeoCount) / this.report.patientCount)
           }))
         }
       ]

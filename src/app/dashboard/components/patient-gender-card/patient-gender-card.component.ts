@@ -40,23 +40,23 @@ export class PatientGenderCardComponent implements OnInit, OnChanges {
           values: [
             {
               label: 'Unknown',
-              value: gender.genderUnknown.positive,
-              percent: Math.round((100 * gender.genderUnknown.positive) / this.report.patientCount)
+              value: gender.unknown.positiveCount,
+              percent: Math.round((100 * gender.unknown.positiveCount) / this.report.patientCount)
             },
             {
               label: 'Other',
-              value: gender.other.positive,
-              percent: Math.round((100 * gender.other.positive) / this.report.patientCount)
+              value: gender.other.positiveCount,
+              percent: Math.round((100 * gender.other.positiveCount) / this.report.patientCount)
             },
             {
               label: 'Male',
-              value: gender.male.positive,
-              percent: Math.round((100 * gender.male.positive) / this.report.patientCount)
+              value: gender.male.positiveCount,
+              percent: Math.round((100 * gender.male.positiveCount) / this.report.patientCount)
             },
             {
               label: 'Female',
-              value: gender.female.positive,
-              percent: Math.round((100 * gender.female.positive) / this.report.patientCount)
+              value: gender.female.positiveCount,
+              percent: Math.round((100 * gender.female.positiveCount) / this.report.patientCount)
             }
           ]
         },
@@ -66,23 +66,23 @@ export class PatientGenderCardComponent implements OnInit, OnChanges {
           values: [
             {
               label: 'Unknown',
-              value: gender.genderUnknown.negative,
-              percent: Math.round((100 * gender.genderUnknown.negative) / this.report.patientCount)
+              value: gender.unknown.negativeCount,
+              percent: Math.round((100 * gender.unknown.negativeCount) / this.report.patientCount)
             },
             {
               label: 'Other',
-              value: gender.other.negative,
-              percent: Math.round((100 * gender.other.negative) / this.report.patientCount)
+              value: gender.other.negativeCount,
+              percent: Math.round((100 * gender.other.negativeCount) / this.report.patientCount)
             },
             {
               label: 'Male',
-              value: gender.male.negative,
-              percent: Math.round((100 * gender.male.negative) / this.report.patientCount)
+              value: gender.male.negativeCount,
+              percent: Math.round((100 * gender.male.negativeCount) / this.report.patientCount)
             },
             {
               label: 'Female',
-              value: gender.female.negative,
-              percent: Math.round((100 * gender.female.negative) / this.report.patientCount)
+              value: gender.female.negativeCount,
+              percent: Math.round((100 * gender.female.negativeCount) / this.report.patientCount)
             }
           ]
         }

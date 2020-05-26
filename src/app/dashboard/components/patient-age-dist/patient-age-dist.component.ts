@@ -39,8 +39,8 @@ export class PatientAgeDistCardComponent implements OnInit, OnChanges {
           colors: [baseTheme.variables.primaryLight, baseTheme.variables.primary],
           values: Object.keys(categories).map((label) => ({
             label,
-            value: categories[label].positive,
-            percent: Math.round((100 * categories[label].positive) / this.report.patientCount)
+            value: categories[label].positiveCount,
+            percent: Math.round((100 * categories[label].positiveCount) / this.report.patientCount)
           }))
         },
         {
@@ -48,8 +48,8 @@ export class PatientAgeDistCardComponent implements OnInit, OnChanges {
           colors: [baseTheme.variables.dangerLight, baseTheme.variables.danger],
           values: Object.keys(categories).map((label) => ({
             label,
-            value: categories[label].negative,
-            percent: Math.round((100 * categories[label].negative) / this.report.patientCount)
+            value: categories[label].negativeCount,
+            percent: Math.round((100 * categories[label].negativeCount) / this.report.patientCount)
           }))
         }
       ]

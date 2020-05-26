@@ -27,18 +27,17 @@ export class AsymptomaticComorbidityComponent implements OnInit, OnChanges {
     }
 
     const data = this.report.testResults.asymptomaticComorbidity;
-
-    const sum = data.comorbidity + data.noComorbidity;
+    const sum = data.comorbidityCount + data.noComorbidityCount;
     this.data = [
       {
         label: 'Comorbidity',
-        value: data.comorbidity,
-        percent: Math.round((100 * data.comorbidity) / sum)
+        value: data.comorbidityCount,
+        percent: Math.round((100 * data.comorbidityCount) / sum)
       },
       {
         label: 'No Comorbidity',
-        value: data.noComorbidity,
-        percent: Math.round((100 * data.noComorbidity) / sum)
+        value: data.noComorbidityCount,
+        percent: Math.round((100 * data.noComorbidityCount) / sum)
       }
     ];
   }

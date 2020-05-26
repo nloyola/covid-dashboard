@@ -27,6 +27,7 @@ import { BarChartCardComponent } from './components/bar-chart-card/bar-chart-car
 import { PatientAgeDistCardComponent } from './components/patient-age-dist/patient-age-dist.component';
 import { AsymptomaticComorbidityComponent } from './components/asymptomatic-comorbidity/asymptomatic-comorbidity.component';
 import { PositiveGenderAgeCardComponent } from './components/positive-gender-age-card/positive-gender-age-card.component';
+import { ResultsByWeekCardComponent } from './components/results-by-week-card/results-by-week-card.component';
 
 @NgModule({
   imports: [
@@ -57,7 +58,8 @@ import { PositiveGenderAgeCardComponent } from './components/positive-gender-age
     BarChartCardComponent,
     PatientAgeDistCardComponent,
     AsymptomaticComorbidityComponent,
-    PositiveGenderAgeCardComponent
+    PositiveGenderAgeCardComponent,
+    ResultsByWeekCardComponent
   ]
 })
 export class DashboardModule {}

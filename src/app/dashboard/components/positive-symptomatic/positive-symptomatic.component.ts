@@ -30,17 +30,17 @@ export class PositiveSymptomaticComponent implements OnInit, OnChanges {
 
     const testResults = this.report.testResults;
 
-    const sum = testResults.symptomatic.positive + testResults.asymptomatic.positive;
+    const sum = testResults.symptomatic.positiveCount + testResults.asymptomatic.positiveCount;
     this.data = [
       {
         label: 'Symptomatic',
-        value: testResults.symptomatic.positive,
-        percent: Math.round((100 * testResults.symptomatic.positive) / sum)
+        value: testResults.symptomatic.positiveCount,
+        percent: Math.round((100 * testResults.symptomatic.positiveCount) / sum)
       },
       {
         label: 'Asymptomatic',
-        value: testResults.asymptomatic.positive,
-        percent: Math.round((100 * testResults.asymptomatic.positive) / sum)
+        value: testResults.asymptomatic.positiveCount,
+        percent: Math.round((100 * testResults.asymptomatic.positiveCount) / sum)
       }
     ];
   }

@@ -28,17 +28,18 @@ export class NegativeSymptomaticComponent implements OnInit, OnChanges {
       return;
     }
 
-    const sum = this.report.testResults.symptomatic.negative + this.report.testResults.asymptomatic.negative;
+    const sum =
+      this.report.testResults.symptomatic.negativeCount + this.report.testResults.asymptomatic.negativeCount;
     this.data = [
       {
         label: 'Symptomatic',
-        value: this.report.testResults.symptomatic.negative,
-        percent: Math.round((100 * this.report.testResults.symptomatic.negative) / sum)
+        value: this.report.testResults.symptomatic.negativeCount,
+        percent: Math.round((100 * this.report.testResults.symptomatic.negativeCount) / sum)
       },
       {
         label: 'Asymptomatic',
-        value: this.report.testResults.asymptomatic.negative,
-        percent: Math.round((100 * this.report.testResults.asymptomatic.negative) / sum)
+        value: this.report.testResults.asymptomatic.negativeCount,
+        percent: Math.round((100 * this.report.testResults.asymptomatic.negativeCount) / sum)
       }
     ];
   }
